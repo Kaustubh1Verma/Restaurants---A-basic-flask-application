@@ -40,5 +40,5 @@ python3 finalProject.py
  Open the application at http://0.0.0.0:5000/ or localhost:5000
  
  ## Images
- 
+ ![Restaurants](https://github.com/Kaustubh1Verma/Restaurants---A-basic-flask-application/blob/master/1.png)
  
