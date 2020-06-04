@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Menu</title>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+	<h1 class="header">{{restaurant.name}}</h1>
+	<div class="pane">
+		<div class="message">
+			{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				{% for message in messages %}
+					<strong class="flash"> {{message}} </strong><br>
+				{% endfor %}
+			{% endif %}
+			{% endwith %}
+			{% if items|length == 0 %}
+				No items in the menu
+			{% endif %}
+		</div>
+		{% for item in items %}
+		<div class="menu-container">
+			<div class="menu-item1">
+				<u>{{item.name}}</u><br>
+			</div>
+			<div class="menu-item2">
+				{% if item.description|length > 0 %}
+					{{item.description}}<br>
+				{% endif %}
+			</div>
+			<div class="menu-item3">
+				{{item.price}}
+			</div>
+			<div class="menu-item4"> 
+				{{item.course}}
+			</div>			
+			<div class="restaurant-item2">
+				<a href="{{url_for('editMenuItem', restaurant_id=restaurant.id, menu_id=item.id)}}">Edit the item</a><br>
+				
+			</div>
+			<div class="restaurant-item3">
+				<a href="{{url_for('deleteMenuItem', restaurant_id=restaurant.id, menu_id=item.id)}}">Remove the item</a>
+			</div>
+		</div>
+		{% endfor %}
+		<div class="create">
+			<a href="{{url_for('newMenuItem',restaurant_id = restaurant.id)}}"><font size="6" style="color: rgba(255, 255, 255, 0.7);">Add new item to the menu</font></a>
+		</div>
+		<div class="create">
+			<a href="{{url_for('restaurantsPage')}}"><font size="6" style="color: rgba(255, 255, 255, 0.7);">Home</font></a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Edit menu item
+	</title>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+	<h1 class="header">Edit the following Menu Item: </h1>
+
+	<div class="pane">
+		<div class="container">
+			<div class="restaurant-item1">
+				<form action="{{url_for('editMenuItem',restaurant_id = restaurant_id, menu_id = menu_id)}}" method="POST">
+					<h2>Name:</h2>
+					<input type="text" name="name" size="30" value = "{{item.name}}">
+					<h2>Description:</h2>
+					<textarea id="menu_desc" name="description" rows="4" cols="50" placeholder ="{{item.description}}"></textarea>
+					<h2>Price: </h2>$ <input type="text" name="price" size="8" value ="{{item.price[1:]}}">
+					<h2>Course:</h2>
+						<input type="radio" id="Appetizer" name="course" value="Appetizer">
+						<label for="course1">Appetizer</label><br>
+						<input type="radio" id="Entree" name="course" value="Entree" >
+						<label for="course2">Entree</label><br>  
+						<input type="radio" id="Dessert" name="course" value="Dessert">
+						<label for="course3">Dessert</label><br><br>
+					<input type="submit" value="Edit" class="submit">
+				</form>
+			</div>
+			<div class="restaurant-item2">
+				<a href="{{url_for('restaurantMenu',restaurant_id = restaurant_id)}}">Cancel</a>
+			</div>
+			<div class="restaurant-item3">
+				<a href="{{url_for('restaurantsPage')}}">Home</a>
+			</div>
+		</div>
+		
+	</div>
+	<script>
+		document.getElementById("{{item.course}}").checked = true
+	</script>
+
+</body>
+</html>
