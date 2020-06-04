@@ -1,0 +1,193 @@
+body{ 
+	font-family: sans-serif; 
+	background-image: url('background.jpg'); 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1, h2, h3, h4 { 
+	color: #FFFFFF; 
+}
+
+h1, h2 { 
+	font-family: 'Georgia', serif; 
+	margin: 0; 
+}
+
+h1{
+	color:rgb(250, 242, 197);
+	font-size: 2em;
+}
+
+h2 { 
+	font-size: 1.2em; 
+}
+
+p, dd, dt { 
+	color: #CCCCCC;
+}
+
+a {
+	text-decoration: none; 
+	color:rgb(26, 27, 15); 
+	font-size: 1em;
+}
+
+a:hover {
+  color: rgba(26, 27, 15, 0.4);
+}
+
+.pane {
+	position:absolute; 
+	left: 25%; 
+	right: 25%;
+	border: 2px solid;
+    border-radius: 25px; 
+    padding: 15px; 
+    margin: 15px; 
+    border-color: #999999; 
+    background-color: hsla(0,100%,25%,0.6);
+}
+
+.container{
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.7),0 2px 10px 0 rgba(0,0,0,0.5);
+	margin-bottom: 10px;
+	display: grid;
+	grid-template-areas: 
+	'heading heading'
+	'edit delete';
+	text-align: center;
+	background-color: rgba(250, 170, 112, 0.95);
+}
+
+.restaurant-item1{
+	grid-area: heading;
+	background-color: rgba(211, 122, 83, 0.95);
+	padding: 5px;
+	font-size: 1.5em;
+	font-family: Impact,"Lucida Console", Courier;
+	font-weight: 600;
+}
+.restaurant-item2{
+	grid-area: edit;
+	font-size: 1em;
+}
+.restaurant-item3{
+	grid-area: delete;
+	font-size: 1em;
+}
+
+
+.menu-container{
+	box-shadow:0 2px 5px 0 rgba(0,0,0,0.7),0 2px 10px 0 rgba(0,0,0,0.5);
+	margin-bottom: 10px;
+	display: grid;
+	grid-template-areas: 
+	'menu-name menu-name menu-course menu-price'
+	'menu-description menu-description menu-description menu-description'
+	'edit edit delete delete';
+	text-align: center;
+	background-color: rgba(250, 170, 112, 0.95);
+}
+
+.menu-item1{
+	grid-area: menu-name;
+	background-color: rgba(211, 122, 83, 0.95);
+	padding: 5px;
+	font-size: 1.5em;
+	font-family: Impact,"Lucida Console", Courier;
+	font-weight: 600;
+
+}
+.menu-item2{
+	grid-area: menu-description;
+	background-color: rgba(211, 122, 83, 0.95);
+	font-size: 1em;
+	color: rgb(82, 0, 0);
+	font-family:  Arial, Helvetica, monospace;
+	padding-top: 3px;
+	padding-bottom: 5px;
+}
+
+.menu-item3{
+	grid-area: menu-price;
+	background-color: rgba(211, 122, 83, 0.95);
+	padding: 5px;
+	font-size: 1.2em;
+	font-family: Impact,"Lucida Console", Courier;
+	font-weight: 600;
+}
+
+.menu-item4{
+	grid-area: menu-course;
+	background-color: rgba(211, 122, 83, 0.95);
+	padding: 5px;
+	font-size: 1.2em;
+	font-family: Impact,"Lucida Console", Courier;
+	font-weight: 600;
+}
+
+
+.create{
+	text-align: center;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.header {
+	left:50%; 
+	text-align: center;
+}
+
+.message{
+	text-align: center;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 1.5em;
+}
+
+.name {
+	width:50%;
+	display: inline-block; 
+	float: left;
+}
+.price {
+	text-align: right; 
+	width:50%; 
+	float: right; 
+}
+.editdeletepane{
+
+}
+
+.error { background: #f0d6d6; padding: 0.5em; }
+
+
+input[type=text]{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+textarea{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.radios{
+	text-align: left;
+}
+
+.submit{
+	width: 100%;
+	border: 1px solid #ccc;
+ 	border-radius: 6px;
+}
