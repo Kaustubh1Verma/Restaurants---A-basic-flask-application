@@ -14,17 +14,10 @@ What things you need to install the software and how to install them
 
 ```
 Flask
+Sqlalchemy
+Sqlite
+Python3
 ```
-```
-sqlalchemy
-```
-```
-Python 3
-```
-```
-sqlite
-```
-
 
 ### Installing
 
