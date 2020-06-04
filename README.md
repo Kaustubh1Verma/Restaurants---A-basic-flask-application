@@ -21,21 +21,25 @@ Python3
 
 ### Installing
 
+Install and update using pip:
 ```
-Give the example
+pip install -U Flask
+```
+Install Sqlalchemy
+```
+pip install SQLAlchemy
 ```
 
-And repeat
-
+## Running
+TO run the application run, keeping all the files as same in the folder
 ```
-until finished
+python3 finalProject.py
 ```
+```
+ * Debug mode: on
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+ ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 
