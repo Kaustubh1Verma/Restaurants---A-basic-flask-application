@@ -41,4 +41,5 @@ python3 finalProject.py
  
  ## Images
  ![Restaurants](https://github.com/Kaustubh1Verma/Restaurants---A-basic-flask-application/blob/master/1.png)
+ ![Menus](https://github.com/Kaustubh1Verma/Restaurants---A-basic-flask-application/blob/master/2.png)
  
