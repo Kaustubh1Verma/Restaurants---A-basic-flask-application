@@ -3,7 +3,6 @@
 # Restaurants(A basic flask application)
 
 It is a basic web application made using flask,sqlite and sqlalchemy. The application involves viewing restaurants,editing and deleting them. It also allows to view the menu of the restaurant and add and remove items from them. 
-SQLAlchemy is an open-source SQL toolkit and object-relational mapper for the Python programming language released under the MIT License. 
 
 ## Getting Started
 
@@ -14,14 +13,20 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Flask
+```
+```
+sqlalchemy
+```
+```
+Python 3
+```
+```
+sqlite
 ```
 
+
 ### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
 
 ```
 Give the example
